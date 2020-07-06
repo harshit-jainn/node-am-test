@@ -1,5 +1,5 @@
 function getD(location) {
-    fetch('http://localhost:3000/weather?address=' + location).then((data) => {
+    fetch('/weather?address=' + location).then((data) => {
         data.json().then(d => {
             console.log(d);
         });
